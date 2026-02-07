@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@500&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="caixa">
+        <h1>Calculadora de IMC</h1>
+
+        <div class="campo">
+            <label for="nomeUsuario">Nome:</label>
+            <input type="text" id="nomeUsuario" placeholder="Nome">
+        </div>
+
+        <div class="campo">
+            <label for="alturaUsuario">Altura:</label>
+            <input type="number" id="alturaUsuario" placeholder="Altura (ex: 1.70)">
+        </div>
+
+        <div class="campo">
+            <label for="pesoUsuario">Peso:</label>
+            <input type="number" id="pesoUsuario" placeholder="Peso (ex: 70)">
+        </div>
+
+
+
+        <button id="btnCalcular" class="btn-calcular" value="calcular">Calcular</button>
+        <div id="resultadoImc" class="caixa-resultado" style="display: none;"></div>
+
+        <button id="btnLimpar" class="btn-limpar" style="display: none;">Limpar</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

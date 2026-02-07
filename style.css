@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-1: #a4b7d7;
+    --cor-2: #5c7aa3;
+    --cor-3: #274472;
+    --cor-4: #1b3454;
+    --cor-5: #0e1a2b;
+}
+
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--cor-5);
+    color: white;
+}
+
+.caixa {
+    position: absolute;
+    width: 400px;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cor-4);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.caixa input {
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.caixa input:hover {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.caixa label {
+    display: inline-block;
+    width: 100px;
+}
+
+.caixa h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.btn-calcular {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--cor-2);
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-calcular:hover {
+    background-color: var(--cor-3);
+    transform: scale(1.02);
+
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.caixa-resultado {
+    background: rgba(164, 183, 215, 0.25);
+
+    display: block;
+    margin: 0 auto;
+
+
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.caixa-resultado p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn-limpar {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(173, 173, 173);
+    font-weight: bold;
+    color: rgb(87, 87, 87);
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-limpar:hover {
+    background-color: rgb(87, 87, 87);
+    color: rgb(173, 173, 173);
+    transform: scale(1.02);
+}
